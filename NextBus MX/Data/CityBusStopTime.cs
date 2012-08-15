@@ -54,13 +54,9 @@ namespace NextBus_MX.Data
                 {
                     return new SolidColorBrush(Windows.UI.Color.FromArgb(255, 219, 39, 39)); // red
                 }
-                else if (minutes <= 10)
+                else if (minutes <= 15)
                 {
                     return new SolidColorBrush(Windows.UI.Color.FromArgb(255, 245, 223, 56)); // yellow
-                }
-                else if (minutes <= 20)
-                {
-                    return new SolidColorBrush(Windows.UI.Color.FromArgb(255, 56, 204, 43)); // green
                 }
                 else
                 {
