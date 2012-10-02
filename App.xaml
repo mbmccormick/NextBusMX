@@ -1,8 +1,8 @@
 ﻿<Application
-    x:Class="NextBus_MX.App"
+    x:Class="NextBusMX.App"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:NextBus_MX">
+    xmlns:local="using:NextBusMX">
 
     <Application.Resources>
         <ResourceDictionary>

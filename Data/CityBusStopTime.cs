@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Windows.UI.Xaml.Media;
 
-namespace NextBus_MX.Data
+namespace NextBusMX.Data
 {
     public class CityBusStopTime
     {
@@ -33,11 +33,13 @@ namespace NextBus_MX.Data
             {
                 int minutes = Convert.ToInt32((ArrivalTime - DateTime.Now).TotalMinutes);
 
-                if (minutes == 0)
+                if (minutes < 0)
+                    return "";
+                else if (minutes == 0)
                     return "Boarding";
-                if (minutes == 1)
+                else if (minutes == 1)
                     return "1 min";
-                else if (minutes > 20)
+                else if (minutes > 15)
                     return ArrivalTime.ToString("h:mm tt");
                 else
                     return Convert.ToInt32((ArrivalTime - DateTime.Now).TotalMinutes) + " mins";
@@ -50,7 +52,11 @@ namespace NextBus_MX.Data
             {
                 int minutes = Convert.ToInt32((ArrivalTime - DateTime.Now).TotalMinutes);
 
-                if (minutes <= 5)
+                if (minutes < 0)
+                {
+                    return (SolidColorBrush)App.Current.Resources["ApplicationForegroundThemeBrush"]; // default
+                }
+                else if (minutes <= 5)
                 {
                     return new SolidColorBrush(Windows.UI.Color.FromArgb(255, 219, 39, 39)); // red
                 }

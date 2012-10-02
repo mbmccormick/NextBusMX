@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
-using NextBus_MX.Data;
-using NextBus_MX.Common;
+using NextBusMX.Data;
+using NextBusMX.Common;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -15,7 +15,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-namespace NextBus_MX
+namespace NextBusMX
 {
     public sealed partial class MainPage : LayoutAwarePage
     {
@@ -73,10 +73,20 @@ namespace NextBus_MX
             if (this.lstStops.SelectedItem == null)
             {
                 StopTimes = await DataSource.StopTimes(Stops.First() as CityBusStop);
+
+                if (StopTimes.Count == 0)
+                {
+                    StopTimes.Add(new CityBusStopTime() { RouteNumber = "N/A", RouteName = "No departures in next 2 hours", ArrivalTime = DateTime.MinValue });
+                }
             }
             else
             {
                 StopTimes = await DataSource.StopTimes(this.lstStops.SelectedItem as CityBusStop);
+
+                if (StopTimes.Count == 0)
+                {
+                    StopTimes.Add(new CityBusStopTime() { RouteNumber = "N/A", RouteName = "No departures in next 2 hours", ArrivalTime = DateTime.MinValue });
+                }
             }
         }
 

@@ -1,19 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
 
-  <Identity Name="a11503c0-d81a-428a-84ce-597c23c42aab"
+  <Identity Name="9fc58c0b-dedd-465f-87bd-d6e1852fc332"
             Publisher="CN=Matt"
             Version="1.0.0.0" />
 
   <Properties>
-    <DisplayName>NextBus MX</DisplayName>
+    <DisplayName>NextBusMX</DisplayName>
     <PublisherDisplayName>Matt</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 
   <Prerequisites>
-    <OSMinVersion>6.2.0</OSMinVersion>
-    <OSMaxVersionTested>6.2.0</OSMaxVersionTested>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
   </Prerequisites>
 
   <Resources>
@@ -23,12 +23,12 @@
   <Applications>
     <Application Id="App"
         Executable="$targetnametoken$.exe"
-        EntryPoint="NextBus_MX.App">
+        EntryPoint="NextBusMX.App">
         <VisualElements
-            DisplayName="NextBus MX"
+            DisplayName="NextBusMX"
             Logo="Assets\Logo.png"
             SmallLogo="Assets\SmallLogo.png"
-            Description="NextBus MX"
+            Description="NextBusMX"
             ForegroundText="light"
             BackgroundColor="#464646">
             <DefaultTile ShowName="allLogos" />

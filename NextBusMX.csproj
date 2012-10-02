@@ -4,15 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FAB2CF42-FE51-4561-B7BE-42129720E24D}</ProjectGuid>
+    <ProjectGuid>{776AD00E-BCA9-47AD-8FE0-67CDA283FB25}</ProjectGuid>
     <OutputType>AppContainerExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>NextBus_MX</RootNamespace>
-    <AssemblyName>NextBus MX</AssemblyName>
+    <RootNamespace>NextBusMX</RootNamespace>
+    <AssemblyName>NextBusMX</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{BC8A1FFA-BEE3-4634-8014-F334798102B3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <PackageCertificateKeyFile>NextBus MX_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <PackageCertificateKeyFile>NextBusMX_TemporaryKey.pfx</PackageCertificateKeyFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -118,7 +118,7 @@
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
-    <None Include="NextBus MX_TemporaryKey.pfx" />
+    <None Include="NextBusMX_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\Logo.png" />

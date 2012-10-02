@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using LumenWorks.Framework.IO.Csv;
 
-namespace NextBus_MX.Data
+namespace NextBusMX.Data
 {
     public class CityBusDataSource
     {
